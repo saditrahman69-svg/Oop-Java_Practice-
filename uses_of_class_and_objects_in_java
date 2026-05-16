@@ -1,0 +1,32 @@
+ class Student {
+int registrationNumber;
+int rollNumber;
+String name;
+String prevCollege;
+String phoneNum;
+
+void input (int a, int b, String c, String d, String e)
+{
+registrationNumber = a;
+rollNumber = b;
+name = c;
+prevCollege = d;
+phoneNum = e;
+
+}
+void display (){
+System.out.println(registrationNumber);
+System.out.println(rollNumber);
+System.out.println(name);
+System.out.println(prevCollege);
+System.out.println(phoneNum);
+}
+}
+public class Main {
+public static void main (String[]args)
+{
+Student s1= new Student();
+s1.input(12356 ,3663, "Sadit","Milestone College","+8801921442192");
+s1.display();
+}
+}
