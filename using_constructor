@@ -1,0 +1,40 @@
+class Student {
+    int registrationNumber;
+    int rollNumber;
+    String name;
+    String prevCollege;
+    String phoneNum;
+
+    // Constructor
+    Student(int a, int b, String c, String d, String e) {
+        registrationNumber = a;
+        rollNumber = b;
+        name = c;
+        prevCollege = d;
+        phoneNum = e;
+    }
+
+    void display() {
+        System.out.println(registrationNumber);
+        System.out.println(rollNumber);
+        System.out.println(name);
+        System.out.println(prevCollege);
+        System.out.println(phoneNum);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+        // Constructor is called here automatically
+        Student s1 = new Student(
+            12356,
+            3663,
+            "Sadit",
+            "Milestone College",
+            "+8801921******"
+        );
+
+        s1.display();
+    }
+}
